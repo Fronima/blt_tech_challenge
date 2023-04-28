@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Vivado v2022.2.2 (64-bit)
+# SW Build 3788238 on Tue Feb 21 19:59:23 MST 2023
+# IP Build 3783773 on Tue Feb 21 23:41:56 MST 2023
+# Start of session at: Thu Apr 27 23:06:29 2023
+# Process ID: 1046912
+# Current directory: /home/kali/blt_tech_challenge/blt_tech_challenge.runs/design_1_rst_ps8_0_99M_0_synth_1
+# Command line: vivado -log design_1_rst_ps8_0_99M_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_rst_ps8_0_99M_0.tcl
+# Log file: /home/kali/blt_tech_challenge/blt_tech_challenge.runs/design_1_rst_ps8_0_99M_0_synth_1/design_1_rst_ps8_0_99M_0.vds
+# Journal file: /home/kali/blt_tech_challenge/blt_tech_challenge.runs/design_1_rst_ps8_0_99M_0_synth_1/vivado.jou
+# Running On: kali, OS: Linux, CPU Frequency: 2593.748 MHz, CPU Physical cores: 8, Host memory: 16377 MB
+#-----------------------------------------------------------
+source design_1_rst_ps8_0_99M_0.tcl -notrace

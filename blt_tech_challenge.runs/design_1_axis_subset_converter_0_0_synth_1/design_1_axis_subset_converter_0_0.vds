@@ -1,0 +1,366 @@
+#-----------------------------------------------------------
+# Vivado v2022.2.2 (64-bit)
+# SW Build 3788238 on Tue Feb 21 19:59:23 MST 2023
+# IP Build 3783773 on Tue Feb 21 23:41:56 MST 2023
+# Start of session at: Thu Apr 27 23:04:23 2023
+# Process ID: 1044225
+# Current directory: /home/kali/blt_tech_challenge/blt_tech_challenge.runs/design_1_axis_subset_converter_0_0_synth_1
+# Command line: vivado -log design_1_axis_subset_converter_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_axis_subset_converter_0_0.tcl
+# Log file: /home/kali/blt_tech_challenge/blt_tech_challenge.runs/design_1_axis_subset_converter_0_0_synth_1/design_1_axis_subset_converter_0_0.vds
+# Journal file: /home/kali/blt_tech_challenge/blt_tech_challenge.runs/design_1_axis_subset_converter_0_0_synth_1/vivado.jou
+# Running On: kali, OS: Linux, CPU Frequency: 2593.748 MHz, CPU Physical cores: 8, Host memory: 16377 MB
+#-----------------------------------------------------------
+source design_1_axis_subset_converter_0_0.tcl -notrace
+create_project: Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1256.539 ; gain = 0.023 ; free physical = 1945 ; free virtual = 5925
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: design_1_axis_subset_converter_0_0
+Command: synth_design -top design_1_axis_subset_converter_0_0 -part xczu7ev-ffvc1156-2-e -incremental_mode off -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xczu7ev'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xczu7ev'
+INFO: [Device 21-403] Loading part xczu7ev-ffvc1156-2-e
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 1044915
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [/home/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 2570.137 ; gain = 238.832 ; free physical = 2165 ; free virtual = 6147
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1848.720; parent = 1697.110; children = 151.609
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3529.531; parent = 2577.074; children = 952.457
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'design_1_axis_subset_converter_0_0' [/home/kali/blt_tech_challenge/blt_tech_challenge.gen/sources_1/bd/design_1/ip/design_1_axis_subset_converter_0_0/synth/design_1_axis_subset_converter_0_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'top_design_1_axis_subset_converter_0_0' [/home/kali/blt_tech_challenge/blt_tech_challenge.gen/sources_1/bd/design_1/ip/design_1_axis_subset_converter_0_0/hdl/top_design_1_axis_subset_converter_0_0.v:60]
+INFO: [Synth 8-6157] synthesizing module 'axis_subset_converter_v1_1_27_core' [/home/kali/blt_tech_challenge/blt_tech_challenge.gen/sources_1/bd/design_1/ipshared/40cb/hdl/axis_subset_converter_v1_1_vl_rfs.v:62]
+INFO: [Synth 8-6155] done synthesizing module 'axis_subset_converter_v1_1_27_core' (0#1) [/home/kali/blt_tech_challenge/blt_tech_challenge.gen/sources_1/bd/design_1/ipshared/40cb/hdl/axis_subset_converter_v1_1_vl_rfs.v:62]
+INFO: [Synth 8-6157] synthesizing module 'tdata_design_1_axis_subset_converter_0_0' [/home/kali/blt_tech_challenge/blt_tech_challenge.gen/sources_1/bd/design_1/ip/design_1_axis_subset_converter_0_0/hdl/tdata_design_1_axis_subset_converter_0_0.v:48]
+INFO: [Synth 8-6155] done synthesizing module 'tdata_design_1_axis_subset_converter_0_0' (0#1) [/home/kali/blt_tech_challenge/blt_tech_challenge.gen/sources_1/bd/design_1/ip/design_1_axis_subset_converter_0_0/hdl/tdata_design_1_axis_subset_converter_0_0.v:48]
+INFO: [Synth 8-6157] synthesizing module 'tuser_design_1_axis_subset_converter_0_0' [/home/kali/blt_tech_challenge/blt_tech_challenge.gen/sources_1/bd/design_1/ip/design_1_axis_subset_converter_0_0/hdl/tuser_design_1_axis_subset_converter_0_0.v:48]
+INFO: [Synth 8-6155] done synthesizing module 'tuser_design_1_axis_subset_converter_0_0' (0#1) [/home/kali/blt_tech_challenge/blt_tech_challenge.gen/sources_1/bd/design_1/ip/design_1_axis_subset_converter_0_0/hdl/tuser_design_1_axis_subset_converter_0_0.v:48]
+INFO: [Synth 8-6157] synthesizing module 'tid_design_1_axis_subset_converter_0_0' [/home/kali/blt_tech_challenge/blt_tech_challenge.gen/sources_1/bd/design_1/ip/design_1_axis_subset_converter_0_0/hdl/tid_design_1_axis_subset_converter_0_0.v:48]
+INFO: [Synth 8-6155] done synthesizing module 'tid_design_1_axis_subset_converter_0_0' (0#1) [/home/kali/blt_tech_challenge/blt_tech_challenge.gen/sources_1/bd/design_1/ip/design_1_axis_subset_converter_0_0/hdl/tid_design_1_axis_subset_converter_0_0.v:48]
+INFO: [Synth 8-6157] synthesizing module 'tdest_design_1_axis_subset_converter_0_0' [/home/kali/blt_tech_challenge/blt_tech_challenge.gen/sources_1/bd/design_1/ip/design_1_axis_subset_converter_0_0/hdl/tdest_design_1_axis_subset_converter_0_0.v:48]
+INFO: [Synth 8-6155] done synthesizing module 'tdest_design_1_axis_subset_converter_0_0' (0#1) [/home/kali/blt_tech_challenge/blt_tech_challenge.gen/sources_1/bd/design_1/ip/design_1_axis_subset_converter_0_0/hdl/tdest_design_1_axis_subset_converter_0_0.v:48]
+INFO: [Synth 8-6157] synthesizing module 'tstrb_design_1_axis_subset_converter_0_0' [/home/kali/blt_tech_challenge/blt_tech_challenge.gen/sources_1/bd/design_1/ip/design_1_axis_subset_converter_0_0/hdl/tstrb_design_1_axis_subset_converter_0_0.v:48]
+INFO: [Synth 8-6155] done synthesizing module 'tstrb_design_1_axis_subset_converter_0_0' (0#1) [/home/kali/blt_tech_challenge/blt_tech_challenge.gen/sources_1/bd/design_1/ip/design_1_axis_subset_converter_0_0/hdl/tstrb_design_1_axis_subset_converter_0_0.v:48]
+INFO: [Synth 8-6157] synthesizing module 'tkeep_design_1_axis_subset_converter_0_0' [/home/kali/blt_tech_challenge/blt_tech_challenge.gen/sources_1/bd/design_1/ip/design_1_axis_subset_converter_0_0/hdl/tkeep_design_1_axis_subset_converter_0_0.v:48]
+INFO: [Synth 8-6155] done synthesizing module 'tkeep_design_1_axis_subset_converter_0_0' (0#1) [/home/kali/blt_tech_challenge/blt_tech_challenge.gen/sources_1/bd/design_1/ip/design_1_axis_subset_converter_0_0/hdl/tkeep_design_1_axis_subset_converter_0_0.v:48]
+INFO: [Synth 8-6157] synthesizing module 'tlast_design_1_axis_subset_converter_0_0' [/home/kali/blt_tech_challenge/blt_tech_challenge.gen/sources_1/bd/design_1/ip/design_1_axis_subset_converter_0_0/hdl/tlast_design_1_axis_subset_converter_0_0.v:48]
+INFO: [Synth 8-6155] done synthesizing module 'tlast_design_1_axis_subset_converter_0_0' (0#1) [/home/kali/blt_tech_challenge/blt_tech_challenge.gen/sources_1/bd/design_1/ip/design_1_axis_subset_converter_0_0/hdl/tlast_design_1_axis_subset_converter_0_0.v:48]
+INFO: [Synth 8-6155] done synthesizing module 'top_design_1_axis_subset_converter_0_0' (0#1) [/home/kali/blt_tech_challenge/blt_tech_challenge.gen/sources_1/bd/design_1/ip/design_1_axis_subset_converter_0_0/hdl/top_design_1_axis_subset_converter_0_0.v:60]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_axis_subset_converter_0_0' (0#1) [/home/kali/blt_tech_challenge/blt_tech_challenge.gen/sources_1/bd/design_1/ip/design_1_axis_subset_converter_0_0/synth/design_1_axis_subset_converter_0_0.v:53]
+WARNING: [Synth 8-7129] Port tid[0] in module tlast_design_1_axis_subset_converter_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tdata[7] in module tlast_design_1_axis_subset_converter_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tdata[6] in module tlast_design_1_axis_subset_converter_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tdata[5] in module tlast_design_1_axis_subset_converter_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tdata[4] in module tlast_design_1_axis_subset_converter_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tdata[3] in module tlast_design_1_axis_subset_converter_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tdata[2] in module tlast_design_1_axis_subset_converter_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tdata[1] in module tlast_design_1_axis_subset_converter_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tdata[0] in module tlast_design_1_axis_subset_converter_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tuser[0] in module tlast_design_1_axis_subset_converter_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tdest[0] in module tlast_design_1_axis_subset_converter_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tkeep[0] in module tlast_design_1_axis_subset_converter_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tstrb[0] in module tlast_design_1_axis_subset_converter_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tlast[0] in module tlast_design_1_axis_subset_converter_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tdata[7] in module tkeep_design_1_axis_subset_converter_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tdata[6] in module tkeep_design_1_axis_subset_converter_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tdata[5] in module tkeep_design_1_axis_subset_converter_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tdata[4] in module tkeep_design_1_axis_subset_converter_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tdata[3] in module tkeep_design_1_axis_subset_converter_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tdata[2] in module tkeep_design_1_axis_subset_converter_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tdata[1] in module tkeep_design_1_axis_subset_converter_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tdata[0] in module tkeep_design_1_axis_subset_converter_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tuser[0] in module tkeep_design_1_axis_subset_converter_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tid[0] in module tkeep_design_1_axis_subset_converter_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tdest[0] in module tkeep_design_1_axis_subset_converter_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tkeep[0] in module tkeep_design_1_axis_subset_converter_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tstrb[0] in module tkeep_design_1_axis_subset_converter_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tlast in module tkeep_design_1_axis_subset_converter_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tdata[7] in module tstrb_design_1_axis_subset_converter_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tdata[6] in module tstrb_design_1_axis_subset_converter_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tdata[5] in module tstrb_design_1_axis_subset_converter_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tdata[4] in module tstrb_design_1_axis_subset_converter_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tdata[3] in module tstrb_design_1_axis_subset_converter_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tdata[2] in module tstrb_design_1_axis_subset_converter_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tdata[1] in module tstrb_design_1_axis_subset_converter_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tdata[0] in module tstrb_design_1_axis_subset_converter_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tuser[0] in module tstrb_design_1_axis_subset_converter_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tid[0] in module tstrb_design_1_axis_subset_converter_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tdest[0] in module tstrb_design_1_axis_subset_converter_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tkeep[0] in module tstrb_design_1_axis_subset_converter_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tstrb[0] in module tstrb_design_1_axis_subset_converter_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tlast in module tstrb_design_1_axis_subset_converter_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tdata[7] in module tdest_design_1_axis_subset_converter_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tdata[6] in module tdest_design_1_axis_subset_converter_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tdata[5] in module tdest_design_1_axis_subset_converter_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tdata[4] in module tdest_design_1_axis_subset_converter_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tdata[3] in module tdest_design_1_axis_subset_converter_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tdata[2] in module tdest_design_1_axis_subset_converter_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tdata[1] in module tdest_design_1_axis_subset_converter_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tdata[0] in module tdest_design_1_axis_subset_converter_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tuser[0] in module tdest_design_1_axis_subset_converter_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tid[0] in module tdest_design_1_axis_subset_converter_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tdest[0] in module tdest_design_1_axis_subset_converter_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tkeep[0] in module tdest_design_1_axis_subset_converter_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tstrb[0] in module tdest_design_1_axis_subset_converter_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tlast in module tdest_design_1_axis_subset_converter_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tid[0] in module tid_design_1_axis_subset_converter_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tdata[7] in module tid_design_1_axis_subset_converter_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tdata[6] in module tid_design_1_axis_subset_converter_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tdata[5] in module tid_design_1_axis_subset_converter_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tdata[4] in module tid_design_1_axis_subset_converter_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tdata[3] in module tid_design_1_axis_subset_converter_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tdata[2] in module tid_design_1_axis_subset_converter_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tdata[1] in module tid_design_1_axis_subset_converter_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tdata[0] in module tid_design_1_axis_subset_converter_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tuser[0] in module tid_design_1_axis_subset_converter_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tdest[0] in module tid_design_1_axis_subset_converter_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tkeep[0] in module tid_design_1_axis_subset_converter_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tstrb[0] in module tid_design_1_axis_subset_converter_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tlast in module tid_design_1_axis_subset_converter_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tuser[0] in module tuser_design_1_axis_subset_converter_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tdata[7] in module tuser_design_1_axis_subset_converter_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tdata[6] in module tuser_design_1_axis_subset_converter_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tdata[5] in module tuser_design_1_axis_subset_converter_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tdata[4] in module tuser_design_1_axis_subset_converter_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tdata[3] in module tuser_design_1_axis_subset_converter_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tdata[2] in module tuser_design_1_axis_subset_converter_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tdata[1] in module tuser_design_1_axis_subset_converter_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tdata[0] in module tuser_design_1_axis_subset_converter_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tid[0] in module tuser_design_1_axis_subset_converter_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tdest[0] in module tuser_design_1_axis_subset_converter_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tkeep[0] in module tuser_design_1_axis_subset_converter_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tstrb[0] in module tuser_design_1_axis_subset_converter_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tlast in module tuser_design_1_axis_subset_converter_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tuser[0] in module tdata_design_1_axis_subset_converter_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tid[0] in module tdata_design_1_axis_subset_converter_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tdest[0] in module tdata_design_1_axis_subset_converter_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tkeep[0] in module tdata_design_1_axis_subset_converter_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tstrb[0] in module tdata_design_1_axis_subset_converter_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tlast in module tdata_design_1_axis_subset_converter_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port aclk in module axis_subset_converter_v1_1_27_core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port aresetn in module axis_subset_converter_v1_1_27_core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port aclken in module axis_subset_converter_v1_1_27_core is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 2653.043 ; gain = 321.738 ; free physical = 2348 ; free virtual = 6339
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1950.430; parent = 1794.262; children = 156.564
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3605.500; parent = 2653.043; children = 952.457
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 2670.855 ; gain = 339.551 ; free physical = 2346 ; free virtual = 6337
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1950.430; parent = 1794.262; children = 156.564
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3623.312; parent = 2670.855; children = 952.457
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 2670.855 ; gain = 339.551 ; free physical = 2345 ; free virtual = 6337
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1950.430; parent = 1794.262; children = 156.564
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3623.312; parent = 2670.855; children = 952.457
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2670.855 ; gain = 0.000 ; free physical = 2343 ; free virtual = 6334
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/kali/blt_tech_challenge/blt_tech_challenge.gen/sources_1/bd/design_1/ip/design_1_axis_subset_converter_0_0/design_1_axis_subset_converter_0_0_ooc.xdc] for cell 'inst'
+create_clock: Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 2749.730 ; gain = 0.000 ; free physical = 2602 ; free virtual = 6594
+Finished Parsing XDC File [/home/kali/blt_tech_challenge/blt_tech_challenge.gen/sources_1/bd/design_1/ip/design_1_axis_subset_converter_0_0/design_1_axis_subset_converter_0_0_ooc.xdc] for cell 'inst'
+Parsing XDC File [/home/kali/blt_tech_challenge/blt_tech_challenge.runs/design_1_axis_subset_converter_0_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/home/kali/blt_tech_challenge/blt_tech_challenge.runs/design_1_axis_subset_converter_0_0_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2749.730 ; gain = 0.000 ; free physical = 2602 ; free virtual = 6593
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 2749.730 ; gain = 0.000 ; free physical = 2600 ; free virtual = 6591
+INFO: [Designutils 20-5008] Incremental synthesis strategy off
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [/home/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:29 ; elapsed = 00:00:32 . Memory (MB): peak = 2749.730 ; gain = 418.426 ; free physical = 2292 ; free virtual = 6283
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1950.430; parent = 1794.262; children = 156.564
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3702.188; parent = 2749.730; children = 952.457
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xczu7ev-ffvc1156-2-e
+INFO: [Synth 8-6742] Reading net delay rules and data
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:29 ; elapsed = 00:00:32 . Memory (MB): peak = 2749.730 ; gain = 418.426 ; free physical = 2291 ; free virtual = 6282
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1950.430; parent = 1794.262; children = 156.564
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3702.188; parent = 2749.730; children = 952.457
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for inst. (constraint file  /home/kali/blt_tech_challenge/blt_tech_challenge.runs/design_1_axis_subset_converter_0_0_synth_1/dont_touch.xdc, line 9).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:29 ; elapsed = 00:00:32 . Memory (MB): peak = 2749.730 ; gain = 418.426 ; free physical = 2290 ; free virtual = 6281
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1950.430; parent = 1794.262; children = 156.564
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3702.188; parent = 2749.730; children = 952.457
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:29 ; elapsed = 00:00:32 . Memory (MB): peak = 2749.730 ; gain = 418.426 ; free physical = 2279 ; free virtual = 6272
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1950.430; parent = 1794.262; children = 156.564
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3702.188; parent = 2749.730; children = 952.457
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 1728 (col length:144)
+BRAMs: 624 (col length: RAMB18 144 RAMB36 72)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-7129] Port aclk in module top_design_1_axis_subset_converter_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port aresetn in module top_design_1_axis_subset_converter_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port aclken in module top_design_1_axis_subset_converter_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_tstrb[0] in module top_design_1_axis_subset_converter_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_tkeep[0] in module top_design_1_axis_subset_converter_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_tlast in module top_design_1_axis_subset_converter_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_tid[0] in module top_design_1_axis_subset_converter_0_0 is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:31 ; elapsed = 00:00:34 . Memory (MB): peak = 2749.730 ; gain = 418.426 ; free physical = 2916 ; free virtual = 6912
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1950.430; parent = 1794.262; children = 156.564
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3702.188; parent = 2749.730; children = 952.457
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:56 ; elapsed = 00:01:05 . Memory (MB): peak = 3199.902 ; gain = 868.598 ; free physical = 1812 ; free virtual = 5810
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2409.972; parent = 2250.184; children = 162.634
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4152.359; parent = 3199.902; children = 952.457
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:56 ; elapsed = 00:01:05 . Memory (MB): peak = 3199.902 ; gain = 868.598 ; free physical = 1800 ; free virtual = 5797
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2410.038; parent = 2250.250; children = 162.634
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4152.359; parent = 3199.902; children = 952.457
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:56 ; elapsed = 00:01:06 . Memory (MB): peak = 3218.934 ; gain = 887.629 ; free physical = 1777 ; free virtual = 5775
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2410.468; parent = 2250.686; children = 162.634
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4171.391; parent = 3218.934; children = 952.457
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:02 ; elapsed = 00:01:11 . Memory (MB): peak = 3224.871 ; gain = 893.566 ; free physical = 1607 ; free virtual = 5605
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2410.468; parent = 2250.686; children = 162.634
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4177.328; parent = 3224.871; children = 952.457
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:02 ; elapsed = 00:01:12 . Memory (MB): peak = 3224.871 ; gain = 893.566 ; free physical = 1641 ; free virtual = 5638
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2410.468; parent = 2250.686; children = 162.634
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4177.328; parent = 3224.871; children = 952.457
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:02 ; elapsed = 00:01:12 . Memory (MB): peak = 3224.871 ; gain = 893.566 ; free physical = 1682 ; free virtual = 5680
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2410.468; parent = 2250.686; children = 162.634
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4177.328; parent = 3224.871; children = 952.457
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:02 ; elapsed = 00:01:12 . Memory (MB): peak = 3224.871 ; gain = 893.566 ; free physical = 1701 ; free virtual = 5699
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2410.468; parent = 2250.686; children = 162.634
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4177.328; parent = 3224.871; children = 952.457
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:02 ; elapsed = 00:01:12 . Memory (MB): peak = 3224.871 ; gain = 893.566 ; free physical = 2127 ; free virtual = 6125
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2410.468; parent = 2250.686; children = 162.634
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4177.328; parent = 3224.871; children = 952.457
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:02 ; elapsed = 00:01:12 . Memory (MB): peak = 3224.871 ; gain = 893.566 ; free physical = 3081 ; free virtual = 7078
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2444.044; parent = 2281.100; children = 162.944
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4177.328; parent = 3224.871; children = 952.457
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++-+-----+------+
+| |Cell |Count |
++-+-----+------+
++-+-----+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:02 ; elapsed = 00:01:12 . Memory (MB): peak = 3224.871 ; gain = 893.566 ; free physical = 3156 ; free virtual = 7154
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2444.044; parent = 2281.100; children = 162.944
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4177.328; parent = 3224.871; children = 952.457
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 10 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:51 ; elapsed = 00:01:01 . Memory (MB): peak = 3224.871 ; gain = 814.691 ; free physical = 3191 ; free virtual = 7189
+Synthesis Optimization Complete : Time (s): cpu = 00:01:02 ; elapsed = 00:01:12 . Memory (MB): peak = 3224.879 ; gain = 893.566 ; free physical = 3181 ; free virtual = 7178
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3224.879 ; gain = 0.000 ; free physical = 3174 ; free virtual = 7172
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3265.496 ; gain = 0.000 ; free physical = 3219 ; free virtual = 7222
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete, checksum: e4975ed3
+INFO: [Common 17-83] Releasing license: Synthesis
+38 Infos, 101 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:19 ; elapsed = 00:01:28 . Memory (MB): peak = 3279.434 ; gain = 1975.957 ; free physical = 3374 ; free virtual = 7378
+INFO: [Common 17-1381] The checkpoint '/home/kali/blt_tech_challenge/blt_tech_challenge.runs/design_1_axis_subset_converter_0_0_synth_1/design_1_axis_subset_converter_0_0.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP design_1_axis_subset_converter_0_0, cache-ID = a147a06ef34bd03d
+INFO: [Common 17-1381] The checkpoint '/home/kali/blt_tech_challenge/blt_tech_challenge.runs/design_1_axis_subset_converter_0_0_synth_1/design_1_axis_subset_converter_0_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file design_1_axis_subset_converter_0_0_utilization_synth.rpt -pb design_1_axis_subset_converter_0_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Thu Apr 27 23:06:13 2023...

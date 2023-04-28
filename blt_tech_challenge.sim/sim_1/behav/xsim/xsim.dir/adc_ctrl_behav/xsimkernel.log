@@ -1,0 +1,7 @@
+Running: xsim.dir/adc_ctrl_behav/xsimk -simmode gui -wdb adc_ctrl_behav.wdb -simrunnum 0 -socket 45403
+Design successfully loaded
+Design Loading Memory Usage: 28784 KB (Peak: 29368 KB)
+Design Loading CPU Usage: 170 ms
+Simulation completed
+Simulation Memory Usage: 110520 KB (Peak: 168052 KB)
+Simulation CPU Usage: 220 ms
